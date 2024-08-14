@@ -19,6 +19,7 @@ This repository contains a basic CI/CD pipeline setup using Terraform.
 6. Go to CodePipeline and update the configuration by adding repo_hook to your repo.
 
 ## Tree
+```
 /terraform-ci-cd-pipeline
 │
 ├── backend.tf
@@ -39,7 +40,7 @@ This repository contains a basic CI/CD pipeline setup using Terraform.
     └── codebuild/
         ├── main.tf
         └── outputs.tf
-
+```
 
 ## License
 
