@@ -1,4 +1,4 @@
-# Terraform CI/CD Pipeline
+# Serverless CI/CD Pipeline with Terraform on AWS
 
 This repository contains a basic CI/CD pipeline setup using Terraform.
 
