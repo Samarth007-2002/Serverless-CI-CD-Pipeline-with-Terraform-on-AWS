@@ -9,7 +9,6 @@ This repository contains a basic CI/CD pipeline setup using Terraform.
 ├── backend.tf
 ├── main.tf
 ├── variables.tf
-├── outputs.tf
 ├── buildspec.yml
 └── modules/
     ├── s3/
