@@ -20,7 +20,7 @@ resource "aws_codepipeline" "terraform_pipeline" {
 
       configuration = {
         FullRepositoryId   = var.repo_id
-        BranchName = "master"
+        BranchName = var.branch_name
         ConnectionArn = aws_codestarconnections_connection.example.arn
       }
     }
