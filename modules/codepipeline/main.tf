@@ -19,7 +19,7 @@ resource "aws_codepipeline" "terraform_pipeline" {
       output_artifacts = ["source_output"]
 
       configuration = {
-        FullRepositoryId   = "Samarth007-2002/terraform_CI-CD_SOURCE"
+        FullRepositoryId   = var.repo_id
         BranchName = "master"
         ConnectionArn = aws_codestarconnections_connection.example.arn
       }
@@ -53,3 +53,5 @@ resource "aws_codestarconnections_connection" "example" {
 variable "codepipeline_role_arn" {}
 variable "artifact_bucket_name" {}
 variable "codebuild_project_name" {}
+variable "branch_name" {}
+variable "repo_id" {}
