@@ -23,4 +23,7 @@ module "codepipeline" {
   codepipeline_role_arn = module.iam.codepipeline_role_arn
   artifact_bucket_name = module.s3_artifacts.s3_bucket_id
   codebuild_project_name = module.codebuild.codebuild_project_name
+  repo_id = var.repo_id
+  branch_name = var.branch_name
 }
+
