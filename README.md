@@ -18,6 +18,29 @@ This repository contains a basic CI/CD pipeline setup using Terraform.
 5. Initalise , plan , validate and apply.
 6. Go to CodePipeline and update the configuration by adding repo_hook to your repo.
 
+## Tree
+/terraform-ci-cd-pipeline
+│
+├── backend.tf
+├── main.tf
+├── variables.tf
+├── outputs.tf
+├── buildspec.yml
+└── modules/
+    ├── s3/
+    │   ├── main.tf
+    │   └── outputs.tf
+    ├── iam/
+    │   ├── main.tf
+    │   └── outputs.tf
+    ├── codepipeline/
+    │   ├── main.tf
+    │   └── outputs.tf
+    └── codebuild/
+        ├── main.tf
+        └── outputs.tf
+
+
 ## License
 
 This project is open-source and available under the MIT License.
